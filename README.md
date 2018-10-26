@@ -27,7 +27,7 @@ The goals / steps of this project are the following:
 [image6]: ./data/mytest/00030.png "Test Image 3"
 [image7]: ./data/mytest/00032.png "Test Image 4"
 [image8]: ./data/mytest/00029.png "Test Image 5"
-[image9]: ./images/grayscale.png "RGB input image"
+[image9]: ./images/RGB.png "RGB input image"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
