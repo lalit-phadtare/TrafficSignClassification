@@ -23,10 +23,10 @@ The goals / steps of this project are the following:
 [image2]: ./images/validation_set_distribution.png "Validation set distribution"
 [image3]: ./images/grayscale.png "Grayscale input image"
 [image4]: ./data/mytest/00028.png "Test Image 1"
-[image5]: ./data/mytest/00029.png "Test Image 2"
+[image5]: ./data/mytest/00031.png "Test Image 2"
 [image6]: ./data/mytest/00030.png "Test Image 3"
-[image7]: ./data/mytest/00031.png "Test Image 4"
-[image8]: ./data/mytest/00032.png "Test Image 5"
+[image7]: ./data/mytest/00032.png "Test Image 4"
+[image8]: ./data/mytest/00029.png "Test Image 5"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -165,10 +165,12 @@ Here are the results of the prediction:
 | Class ID	| Image			        |     Prediction        			| 
 |-----------|-----------------------|-----------------------------------| 
 |	2		| Speed limit (50km/h)  | Speed limit (50km/h)              | 
-|	4		| Speed limit (70km/h)  | Speed limit (70km/h) 				|
-|	4		| Speed limit (70km/h)  | Speed limit (70km/h) 				|
 |	38		| Keep right			| Keep right						|
+|	4		| Speed limit (70km/h)  | Speed limit (70km/h) 				|
 |	12		| Priority road    		| Priority road					 	|
+|	4		| Speed limit (70km/h)  | Speed limit (70km/h) 				|
+
+
 
 The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%. 
 
@@ -179,7 +181,6 @@ The code for making predictions on my final model is located in the 16th cell of
 First Image:
 2, Speed limit (50km/h)
 
-
 | Probability         	|Class ID|     Prediction	        		     	   |	 
 |-----------------------|--------|---------------------------------------------|
 | 0.99         			|	2	 | Speed limit (50km/h)   				 	   | 
@@ -188,9 +189,9 @@ First Image:
 | 5.3e-06	      		|	1    | Speed limit (20km/h)					 	   |
 | 5.5e-10				|   10   | No passing for vehicles over 3.5 metric tons|
 
-Second Image:
-4, Speed limit (70km/h)
 
+Second Image:
+38, Keep right
 
 | Probability         	|Class ID|     Prediction	        		     | 
 |-----------------------|--------|---------------------------------------| 
@@ -212,7 +213,7 @@ Third Image:
 | 1.1e-07				|   7    | Speed limit (100km/h)      			 |
 
 Fourth Image:
-38, Keep right
+12, Priority road
 
 | Probability         	|Class ID|     Prediction	        		     	   | 
 |:----------------------|--------|---------------------------------------------| 
@@ -224,7 +225,7 @@ Fourth Image:
 
 
 Fifth Image:
-12, Priority road
+4, Speed limit (70km/h)
 
 
 | Probability         	|Class ID|     Prediction	        		     | 
@@ -236,8 +237,5 @@ Fifth Image:
 | 6.7e-04				|   14   | Stop      					  		 |
 
 
-
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-#### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 
 
