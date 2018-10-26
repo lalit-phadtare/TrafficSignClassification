@@ -79,9 +79,9 @@ The mean and the variance after normalization are:
 The model I used is modified LeNet-5 model.
 
 My final model consisted of the following layers:
-|:---------------------:|:---------------------------------------------:|
+
 | Layer         		|     Description	        					| 
-|:---------------------:|:---------------------------------------------:| 
+|-----------------------|-----------------------------------------------| 
 | Input         		| 32x32x1 grayscale image   					| 
 | Convolution 5x5x1x6 	| 1x1x1x1 stride, same padding, outputs 28x28x6 |
 | RELU					|												|
@@ -95,7 +95,7 @@ My final model consisted of the following layers:
 | Fully connected		| input 120, outputs 84  						|
 | RELU					|												|
 | Fully connected		| input 84, outputs 43  						|
-|:---------------------:|:---------------------------------------------:|
+
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
