@@ -27,6 +27,7 @@ The goals / steps of this project are the following:
 [image6]: ./data/mytest/00030.png "Test Image 3"
 [image7]: ./data/mytest/00032.png "Test Image 4"
 [image8]: ./data/mytest/00029.png "Test Image 5"
+[image9]: ./images/grayscale.png "RGB input image"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -66,7 +67,9 @@ Here is an exploratory visualization of the training and validation data set. Th
 Since the color information doesn't help classification much as per the Sermamet paper, I tried the Y channel and grayscale converted input image. Finally I settled on the grayscale image.
 Here is one example of one the images converted to grayscale.
 
-![alt text](./images/grayscale.png =100x100 "Grayscale input image") 
+![alt text][image9] 
+
+![alt text][image3] 
 
 The data is further process to center the mean at zero. I do this normalization by doing (image-128)/128. 128 because it is an unit8 input image.
 The mean and the variance after normalization are:
