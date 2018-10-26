@@ -66,12 +66,12 @@ Here is an exploratory visualization of the training and validation data set. Th
 Since the color information doesn't help classification much as per the Sermamet paper, I tried the Y channel and grayscale converted input image. Finally I settled on the grayscale image.
 Here is one example of one the images converted to grayscale.
 
-![alt text][image3]
+![alt text](./images/grayscale.png =100x100 "Grayscale input image") 
 
 The data is further process to center the mean at zero. I do this normalization by doing (image-128)/128. 128 because it is an unit8 input image.
 The mean and the variance after normalization are:
 
-[mean, variance] = [-0.36002157403085455, 0.51667497963792453]
+`[mean, variance] = [-0.36002157403085455, 0.51667497963792453]`
 
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
