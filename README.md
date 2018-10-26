@@ -161,15 +161,14 @@ In the current saved run all images were classified correctly but the sign for "
 
 Here are the results of the prediction:
 
-|:----------|:---------------------:|:---------------------------------:| 
+
 | Class ID	| Image			        |     Prediction        			| 
-|:----------|:---------------------:|:---------------------------------:| 
+|-----------|-----------------------|-----------------------------------| 
 |	2		| Speed limit (50km/h)  | Speed limit (50km/h)              | 
 |	4		| Speed limit (70km/h)  | Speed limit (70km/h) 				|
 |	4		| Speed limit (70km/h)  | Speed limit (70km/h) 				|
 |	38		| Keep right			| Keep right						|
 |	12		| Priority road    		| Priority road					 	|
-|:----------|:---------------------:|:---------------------------------:| 
 
 The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%. 
 
@@ -180,67 +179,62 @@ The code for making predictions on my final model is located in the 16th cell of
 First Image:
 2, Speed limit (50km/h)
 
-|:---------------------:|:------:|--------------------------------------------:|
+
 | Probability         	|Class ID|     Prediction	        		     	   |	 
-|:---------------------:|:------:|--------------------------------------------:|
+|-----------------------|--------|---------------------------------------------|
 | 0.99         			|	2	 | Speed limit (50km/h)   				 	   | 
 | 1.0e-04     			|	5	 | Speed limit (80km/h) 					   |
 | 6.9e-06				|	3	 | Speed limit (60km/h)						   | 
 | 5.3e-06	      		|	1    | Speed limit (20km/h)					 	   |
 | 5.5e-10				|   10   | No passing for vehicles over 3.5 metric tons|
-|:---------------------:|:------:|--------------------------------------------:|
 
 Second Image:
 4, Speed limit (70km/h)
 
-|:---------------------:|:------:|--------------------------------------:|
+
 | Probability         	|Class ID|     Prediction	        		     | 
-|:---------------------:|:------:|--------------------------------------:| 
+|-----------------------|--------|---------------------------------------| 
 | 9.9e-01               |	38	 | Keep right  							 | 
 | 5.3e-07     			|	34	 | Turn left ahead						 |
 | 2.3e-07				|	36	 | Go straight or right					 | 
 | 1.9e-09	    		|	1    | Speed limit (20km/h)			 		 |
 | 2.4e-10				|   12   | Priority road      					 |
-|:---------------------:|:------:|--------------------------------------:|
 
 Third Image:
 4, Speed limit (70km/h)
 
-|:---------------------:|:------:|--------------------------------------:|
 | Probability         	|Class ID|     Prediction	        		     | 
-|:---------------------:|:------:|--------------------------------------:| 
+|:----------------------|--------|---------------------------------------| 
 | 9.9e-01        		|	4	 | Speed limit (70km/h)   				 | 
 | 2.6e-05     			|	0	 | Speed limit (20km/h) 				 |
 | 2.5e-05				|	1	 | Speed limit (30km/h)					 | 
 | 1.8e-05	    		|	8    | Speed limit (120km/h)		 		 |
 | 1.1e-07				|   7    | Speed limit (100km/h)      			 |
-|:---------------------:|:------:|--------------------------------------:|
 
 Fourth Image:
 38, Keep right
 
-|:---------------------:|:------:|--------------------------------------------:|
 | Probability         	|Class ID|     Prediction	        		     	   | 
-|:---------------------:|:------:|--------------------------------------------:| 
+|:----------------------|--------|---------------------------------------------| 
 | 9.9e-01        		|	12	 | No passing for vehicles over 3.5 metric tons| 
 | 1.8e-03     			|	40	 | Roundabout mandatory 					   |
 | 1.3e-03				|	41	 | End of no passing						   | 
 | 8.9e-04	    		|	13   | Yield					 		 		   |
 | 3.5e-04				|   11   | Right-of-way at the next intersection       |
-|:---------------------:|:------:|--------------------------------------------:|
+
 
 Fifth Image:
 12, Priority road
 
-|:---------------------:|:------:|--------------------------------------:|
+
 | Probability         	|Class ID|     Prediction	        		     | 
-|:---------------------:|:------:|--------------------------------------:| 
+|-----------------------|--------|---------------------------------------| 
 | 8.9e-01        		|	4	 | Speed limit (70km/h)   				 | 
 | 7.4e-02     			|	0	 | Speed limit (20km/h)					 |
 | 2.9e-02				|	1	 | Speed limit (30km/h)					 | 
 | 2.3e-03	    		|	8    | Speed limit (120km/h)				 |
 | 6.7e-04				|   14   | Stop      					  		 |
-|:---------------------:|:------:|--------------------------------------:|
+
 
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
