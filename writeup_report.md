@@ -187,10 +187,10 @@ First Image:
 | Probability         	|Class ID|     Prediction	        		     	         |	 
 |-----------------------|--------|---------------------------------------------------|
 | 3.84e-01         		|	2	 | Speed limit (50km/h)   				 	   	     | 
-| 3.81e-01     			|	1	 | Slippery road 					   				 |
-| 1.13e-01				|	5	 | End of no passing by vehicles over 3.5 metric tons| 
-| 7.36e-02	      		|	3    | No passing for vehicles over 3.5 metric tons	 |
-| 2.14e-02				|   10   | Right-of-way at the next intersection			 |
+| 3.81e-01     			|	1	 | Speed limit (30km/h) 					   		 |
+| 1.13e-01				|	5	 | Speed limit (80km/h)                              |  
+| 7.36e-02	      		|	3    | Speed limit (60km/h)	                             |
+| 2.14e-02				|   10   | No passing for vehicles over 3.5 metric tons		 |
 
 
 Second Image:
@@ -199,9 +199,9 @@ Second Image:
 | Probability         	|Class ID|     Prediction	        		     | 
 |-----------------------|--------|---------------------------------------| 
 | 9.66e-01              |	4	 | Speed limit (70km/h) 				 | 
-| 2.70e-02   			|	1	 | Speed limit (120km/h)				 |
-| 3.05e-03				|	7	 | Speed limit (30km/h)					 | 
-| 2.75e-03	    		|	5    | Stop	    		 		             |
+| 2.70e-02   			|	1	 | Speed limit (30km/h)				     |
+| 3.05e-03				|	7	 | Speed limit (100km/h)				 | 
+| 2.75e-03	    		|	5    | Speed limit (80km/h)	    		 	 |
 |2.20e-04				|   0    | Speed limit (20km/h)      			 |
 
 Third Image:
@@ -210,10 +210,10 @@ Third Image:
 | Probability         	|Class ID|     Prediction	        		     | 
 |:----------------------|--------|---------------------------------------| 
 | 9.99e-01        		|	12	 | Priority road   			         	 | 
-| 1.37e-07     			|	2	 | Roundabout mandatory 				 |
-| 2.38e-08				|	7	 | No vehicles					  		 | 
-| 6.35e-09	    		|	15   | Speed limit (50km/h)		 		  	 |
-| 1.13e-09				|   1    | Ahead only     			             |
+| 1.37e-07     			|	2	 | Speed limit (50km/h) 				 |
+| 2.38e-08				|	7	 | Speed limit (100km/h)				 | 
+| 6.35e-09	    		|	15   | No vehicles		 		  	         |
+| 1.13e-09				|   1    | Speed limit (30km/h)     			 |
 
 Fourth Image:
 18, General caution
@@ -221,10 +221,10 @@ Fourth Image:
 | Probability         	|Class ID|     Prediction	        		     	   | 
 |:----------------------|--------|---------------------------------------------| 
 | 9.99e-01        		|	18	 | General caution                             | 
-| 5.508e-06     	    |	24	 | Pedestrians 					               |
+| 5.508e-06     	    |	24	 | Road narrows on the right 				   |
 | 1.76e-06				|	26	 | Traffic signals						       | 
-| 1.75e-06	    		|	27   | Road narrows on the right				   |
-| 2.33e-08				|   29   | Right-of-way at the next intersection       |
+| 1.75e-06	    		|	27   | Pedestrians				                   |
+| 2.33e-08				|   29   | Bicycles crossing                           |
 
 
 Fifth Image:
@@ -235,9 +235,11 @@ Fifth Image:
 |-----------------------|--------|---------------------------------------| 
 | 9.99e-01        		|	34	 | Turn left ahead   				     | 
 | 4.45e-05     			|	38	 | Keep right					         |
-| 4.08e-06				|	36	 | Beware of ice/snow					 | 
-| 6.09e-07	    		|	13   | Ahead only				             |
-| 2.58e-07				|   35   | Right-of-way at the next intersection |
+| 4.08e-06				|	36	 | Go straight or right					 | 
+| 6.09e-07	    		|	13   | Yield				                 |
+| 2.58e-07				|   35   | Ahead only                            |
 
+
+The first sign that is mistaken by the model is very close to the actual sign in images. The actual sign does show up in the top 5 possibilities.
 
 
